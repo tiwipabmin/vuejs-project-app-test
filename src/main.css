@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    height: 8px;
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+  }
+
+  .custom-icon-button-personal.p-button.p-button-icon-only {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0rem;
+  }
+
+  .custom-tooltip-personal .p-tooltip-text {
+    width: fit-content;
+    background-color: #d9d9d9;
+  }
+
+  .custom-tooltip-personal.p-tooltip-top .p-tooltip-arrow {
+    border-top-color: #d9d9d9;
+  }
+
+  .custom-tooltip-personal.p-tooltip-bottom .p-tooltip-arrow {
+    border-bottom-color: #d9d9d9;
+  }
+
+  @font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/static/vue/fonts/Sarabun/thsarabunnew-webfont.eot');
+    src: url('../public/static/vue/fonts/Sarabun/thsarabunnew-webfont.eot?#iefix')
+        format('embedded-opentype'),
+      url('../public/static/vue/fonts/Sarabun/thsarabunnew-webfont.woff') format('woff'),
+      url('../public/static/vue/fonts/Sarabun/thsarabunnew-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/fonts/Sarabun/thsarabunnew_bolditalic-webfont.eot');
+    src: url('../public/fonts/Sarabun/thsarabunnew_bolditalic-webfont.eot?#iefix')
+        format('embedded-opentype'),
+      url('../public/fonts/Sarabun/thsarabunnew_bolditalic-webfont.woff') format('woff'),
+      url('../public/fonts/Sarabun/thsarabunnew_bolditalic-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/static/vue/fonts/Sarabun/thsarabunnew_italic-webfont.eot');
+    src: url('../public/static/vue/fonts/Sarabun/thsarabunnew_italic-webfont.eot?#iefix')
+        format('embedded-opentype'),
+      url('../public/static/vue/fonts/Sarabun/thsarabunnew_italic-webfont.woff') format('woff'),
+      url('../public/static/vue/fonts/Sarabun/thsarabunnew_italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'THSarabunNew';
+    src: url('../public/static/vue/fonts/Sarabun/thsarabunnew_bold-webfont.eot');
+    src: url('../public/static/vue/fonts/Sarabun/thsarabunnew_bold-webfont.eot?#iefix')
+        format('embedded-opentype'),
+      url('../public/static/vue/fonts/Sarabun/thsarabunnew_bold-webfont.woff') format('woff'),
+      url('../public/static/vue/fonts/Sarabun/thsarabunnew_bold-webfont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+}
