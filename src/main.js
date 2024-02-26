@@ -11,6 +11,8 @@ import App from './App.vue'
 import store from './store'
 import router from './router'
 
+import TestServerService from './services/TestServerService'
+
 // Font Awesome
 import '@fortawesome/fontawesome-free/js/all'
 // Pixeden Stroke
@@ -31,4 +33,3 @@ SetupPrimevue(app)
 app.use(store)
 app.use(router)
 app.mount('#app')
-

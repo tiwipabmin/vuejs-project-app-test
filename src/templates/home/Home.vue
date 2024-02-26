@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import TestServerService from '../../services/TestServerService'
+
 export default {
   data() {
     return {
@@ -12,11 +14,13 @@ export default {
     }
   },
   methods: {
-    submit() {
+    async submit() {
+      const res = await TestServerService.test()
+
       this.$toast.add({
         severity: 'warn',
-        summary: 'ไม่มีไฟล์อยู่ในโฟลเดอร์ชั่วคราว',
-        detail: 'กรุณาอัพโหลดไฟล์ mpi ก่อนทำการกดปุ่มต่อไป',
+        summary: 'Server Test',
+        detail: res.data.message,
         styleClass: 'tw-font-sarabun tw-text-sm tw-font-normal',
         contentStyleClass: 'tw-font-sarabun tw-text-sm tw-font-normal',
         life: 5000,
