@@ -7,7 +7,7 @@ export default ({ mode }) => {
     plugins: [vue()],
     server: {
       host: process.env.VITE_APP_HOSTNAME || 'localhost',
-      port: 8080,
+      port: 4000,
       proxy: {
         '/api': {
           target: process.env.VITE_APP_DEV_API_TARGET,

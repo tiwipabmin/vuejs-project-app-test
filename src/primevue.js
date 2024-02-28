@@ -15,6 +15,7 @@ import InputMask from 'primevue/inputmask'
 import InputNumber from 'primevue/inputnumber'
 import InputText from 'primevue/inputtext'
 import InputSwitch from 'primevue/inputswitch'
+import Skeleton from 'primevue/skeleton';
 import OverlayPanel from 'primevue/overlaypanel'
 import Paginator from 'primevue/paginator'
 import Password from 'primevue/password'
@@ -61,6 +62,7 @@ export default (app) => {
   app.component('InputNumber', InputNumber)
   app.component('InputSwitch', InputSwitch)
   app.component('InputText', InputText)
+  app.component('Skeleton', Skeleton)
   app.component('OverlayPanel', OverlayPanel)
   app.component('Paginator', Paginator)
   app.component('Password', Password)

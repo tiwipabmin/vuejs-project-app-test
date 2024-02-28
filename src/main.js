@@ -12,6 +12,7 @@ import store from './store'
 import router from './router'
 
 import TestServerService from './services/TestServerService'
+import CustomerService from './services/CustomerService'
 
 // Font Awesome
 import '@fortawesome/fontawesome-free/js/all'
